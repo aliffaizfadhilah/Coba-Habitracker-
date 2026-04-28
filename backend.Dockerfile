@@ -1,5 +1,5 @@
 FROM php:8.2-cli
-
+ARG CACHEBUST=1
 RUN apt-get update && apt-get install -y \
     curl zip unzip git \
     libpng-dev libonig-dev libxml2-dev libzip-dev \
