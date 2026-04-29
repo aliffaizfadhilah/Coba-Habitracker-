@@ -1,12 +1,15 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Dashboard from './pages/Dashboard'
-import LandingPage from './pages/LandingPage'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import OtpVerify from './pages/OtpVerify'
-import AuthCallback from './pages/AuthCallback'
-import ForgotPassword from './pages/ForgotPassword'
+// ─── App.tsx ───────────────────────────────────────────────────────────────────
 
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Dashboard     from './pages/Dashboard'
+import Login         from './pages/auth/Login'
+import Register      from './pages/auth/Register'
+import OtpVerify     from './pages/auth/OtpVerify'
+import AuthCallback  from './pages/auth/AuthCallback'
+import ForgotPassword from './pages/auth/ForgotPassword'
+
+// LandingPage tetap di posisi semula (tidak diubah strukturnya)
+import LandingPage   from './pages/LandingPage'
 
 export default function App() {
   return (
